@@ -41,7 +41,7 @@ main{
     align-items: center;
     gap: 10vh;
     margin-left: 17%;
-    margin-right: 5%;
+    margin-right:17%;
     margin-top: 5%;
     
 }
@@ -158,12 +158,19 @@ main{
     width: 16px;
 }
 
-.lado_esquerdo{
+.lado_direito{
     
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1vh;
+}
+
+.lado_esquerdo{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1vh;
 }
 
 .text_area_e_imagem{
@@ -322,4 +329,36 @@ footer{
 .imagem-link:hover.tooltip {
     visibility: visible;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .text_area {
+      width: 100%;
+      font-size: 20px;
+    }
+    .botoes, .botoes_esquerdos {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  /* Media query para dispositivos móveis */
+@media (max-width: 768px) { /* Altere o valor para o tamanho máximo de tela desejado */
+    main {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .lado_esquerdo, .lado_direito { /* Supondo que exista uma classe .lado_direito para o lado direito */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text_area_e_imagem {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
