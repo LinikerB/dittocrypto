@@ -1,2 +1,2 @@
 # dittocrypto
-Um encriptador de texto simples com a temático do pokémon ditto
+Um encriptador de texto simples usando javascript com matrizes com visual do pokémon ditto.
