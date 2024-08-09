@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DittoCrypto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="imagem_link">
+            <a href="https://github.com/LinikerB" class="imagem-link" target="_blank">
+                <img src="./ASSETS/ditto_sorrindo.png" alt="ditto sorrindo" class="imagem_menu">
+                <span class="tooltip">Me avalie no GitHub!</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text_area" cols="41" rows="3" placeholder="Digite seu texto" name="" id=""></textarea>
+            <div class="informacao">
+                <img class="icone_exclamacao" src="./ASSETS/bi_exclamation-circle-fill.png" alt="logo_exclamacao">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+        
+        <section class="lado_esquerdo">
+            <div class="text_area_e_imagem">
+            <div class="text-animation" id="textAnimation"></div>
+            <img class="imagem_ditto" src="./ASSETS/ditto_neutro.png" alt="ditto neutro">
+            <textarea class="text_descriptografado invisivel" name="" id="textAnimation"></textarea>
+            
+        </div>
+            <div class="botoes_esquerdos">
+            <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            <button class="btn-limpar-campos" onclick="limparCampos()">Limpar campos    ✅</button>
+            </div>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>feito pelo <a href="https://github.com/LinikerB" target="_blank">LinikerB</a></p>
+            <div class="social-links">
+                <a href="https://github.com/LinikerB" target="_blank" class="social-icon">
+                    <img src="./ASSETS/github-icon.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/liniker-patricio-568683134/" target="_blank" class="social-icon">
+                    <img src="./ASSETS/linkedin-icon.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
